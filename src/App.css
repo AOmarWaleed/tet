@@ -1,0 +1,41 @@
+.center-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 500%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  background-image: url(../public/logo.png),
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-position: center;
+  background-size: 80% 80%;
+  background-repeat: no-repeat, repeat;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  left: calc(100% - 10px);
+}
+
+.layer {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
