@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
@@ -43,7 +43,7 @@ const MyForm = () => {
               id="city"
               name="city"
               list="city-list"
-              onChange={(e) => setFieldValue("city", e.target.value)}
+              onChange={(e: { target: { value: string; }; }) => setFieldValue("city", e.target.value)}
             />
             <datalist id="city-list">
               {cities.map((city, index) => (

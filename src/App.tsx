@@ -31,7 +31,7 @@ function App() {
         <Wheel
           items={items}
           setWinner={setWinner}
-          wheelSize={350}
+          wheelSize={300}
           spinDuration={1000}
         />
       </div>
